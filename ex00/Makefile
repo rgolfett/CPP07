@@ -2,10 +2,7 @@ NAME = Whatever
 
 SRCS =  main.cpp \
 		
-
-		
-INCLUDES = Whatever.hpp \
-			
+INCLUDES = Whatever.hpp \		
 
 OBJS =	$(SRCS:%.cpp=%.o)
 
@@ -13,7 +10,7 @@ CXX = c++
 
 all : $(NAME)
 
-CPPFLAGS = -g  -Wall -Wextra -std=c++98 #-Werror 
+CPPFLAGS = -g  -Wall -Wextra -std=c++98 -Werror 
 $(NAME) : $(OBJS)
 		$(CXX) $(CPPFLAGS) -o $(NAME) $(OBJS)
 
