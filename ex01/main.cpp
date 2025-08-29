@@ -8,8 +8,16 @@ void nullifier(T &)
 	return;
 }
 
+template<typename T>
+
+void func(T const &x)
+{
+	std::cout << x << std::endl;
+}
+
 int main(void)
 {
 	Iter("12345", 5, nullifier);
+	Iter("12345", 5, func);
 	return (0);
 }
