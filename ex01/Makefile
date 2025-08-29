@@ -3,7 +3,7 @@ NAME = Iter
 SRCS =  main.cpp \
 
 		
-INCLUDES = Iter.hpp \
+INCLUDES = iter.hpp \
 			
 
 OBJS =	$(SRCS:%.cpp=%.o)
